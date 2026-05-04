@@ -1,394 +1,630 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aegis | Scam Awareness Story</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="hero section" id="intro">
-        <div class="section__content hero__content fade-load">
-          <p class="eyebrow">Aegis Anti-Scam Awareness</p>
-          <h1 class="hero__title">
-            Congratulations, you've clicked a link that
-            <span>LITERALLY SAYS don't click!!!</span>
-          </h1>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aegis Family Safety — AIEC 2026 Semi-Finals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-      <main>
-        <section class="bubble-section section" aria-labelledby="thought-sequence-title">
-          <div class="section__content narrow">
-            <h2 id="thought-sequence-title" class="sr-only">Thought sequence</h2>
-            <p class="bubble-copy" data-bubble-copy></p>
+<div class="deck" id="deck">
 
-            <div class="bubble-stage" aria-hidden="true">
-              <div class="thought-bubble" data-thought-bubble>
-                <span class="thought-bubble__core"></span>
-                <span class="thought-bubble__trail thought-bubble__trail--one"></span>
-                <span class="thought-bubble__trail thought-bubble__trail--two"></span>
-              </div>
-            </div>
-
-            <p class="tone-shift" data-tone-shift>For some people it does</p>
-          </div>
-        </section>
-
-        <section class="stats-section section" id="impact" data-observe="stats">
-          <div class="section__content">
-            <div class="stat-stack">
-              <p class="stat-line" data-stat="primary">
-                6% of Canadians aged 60+ lose money due to scams each year
-              </p>
-              <p class="stat-line stat-line--large" data-stat="secondary">
-                That's over 7.7 billion dollars lost each year!!!
-              </p>
-            </div>
-
-            <div class="compare-grid" data-compare-grid>
-              <article class="compare-card compare-card--left" data-compare="left">
-                <p>
-                  Though only 5% of Canadian elders are scammed annually, when it applies
-                  to your parents, the risk feels nearly 100%.
-                </p>
-              </article>
-              <article class="compare-card compare-card--right" data-compare="right">
-                <p>
-                  Americans aged 60+ reported $7.7 billion in losses - a 60% increase from
-                  2024. Those in their 30s and 40s reported $4.6 billion.
-                </p>
-              </article>
-            </div>
-
-            <div
-              class="fact-stream fact-stream--compare"
-              data-fact-stage="compare"
-              aria-live="polite"
-            ></div>
-            <p class="fact-outro" data-fact-outro>
-              Your parent shouldn't have to be exposed to these threats.
-            </p>
-          </div>
-        </section>
-
-        <section class="emotion-section section" id="emotion" data-observe="emotion">
-          <div class="section__content narrow">
-            <p class="emotion-copy is-visible" data-emotion-line aria-live="polite">
-              It's not only the elderly who feel the pain
-            </p>
-
-            <div class="interaction-panel">
-              <p class="interaction-instruction">Click the boulder to begin</p>
-
-              <button
-                class="sisyphus-button"
-                type="button"
-                data-sisyphus-button
-                aria-label="Start the boulder animation"
-              >
-                <span class="scene-frame" aria-hidden="true">
-                  <canvas class="sisyphus-canvas" data-sisyphus-canvas></canvas>
-                </span>
-              </button>
-
-              <p class="explanation" data-explanation>
-                That's how children of elderly victims feel-teaching anti-scam habits that
-                often don't stick.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="cta-section section" id="cta" aria-labelledby="cta-title">
-          <div class="section__content narrow">
-            <p class="cta-kicker">The cycle only breaks when prevention actually lasts.</p>
-            <h2 class="cta-title" id="cta-title" data-cta>
-              We here at Aegis are here to change everything.
-            </h2>
-          </div>
-        </section>
-
-        <section class="solution-section section" data-observe="solution" aria-labelledby="solution-title">
-          <div class="section__content">
-            <div class="solution-stack" id="solution-title">
-              <p class="solution-kicker" data-solution-title>Three Pillars</p>
-              <h2 class="solution-title-main">
-                Message Guard, Voice Guard, and Home Guard.
-              </h2>
-              <p class="solution-intro" data-solution-intro>
-                One family account protects the inbox, the phone, and the home without
-                asking the senior to install or manage complex tools.
-              </p>
-
-              <div class="solution-grid">
-                <article class="solution-block solution-block--message" data-solution-block>
-                  <div class="solution-card-head">
-                    <span class="solution-icon" aria-hidden="true">
-                      <svg viewBox="0 0 64 64" role="presentation">
-                        <rect x="10" y="14" width="44" height="32" rx="9"></rect>
-                        <path d="M20 24h24M20 31h18"></path>
-                        <path d="M23 46l-6 8M41 46l6 8"></path>
-                      </svg>
-                    </span>
-                    <div>
-                      <p class="solution-label">Pillar 1</p>
-                      <h3 class="solution-card-title">Message Guard</h3>
-                    </div>
-                  </div>
-
-                  <p class="solution-copy">
-                    Message Guard scans texts, links, and QR codes in
-                    <span class="solution-key">real time</span> to classify content as
-                    Safe, Suspicious, or Scam before the senior engages.
-                  </p>
-
-                  <ul class="solution-steps">
-                    <li>Incoming SMS, shared link, or QR scan enters the pipeline.</li>
-                    <li>AI detects phishing patterns, urgency, impersonation, and manipulative language.</li>
-                    <li>If flagged, the adult child gets a calm alert with the reason, risk level, and suggested action.</li>
-                  </ul>
-
-                  <div class="messageguard-demo" data-message-demo aria-hidden="true">
-                    <div class="messageguard-demo__message" data-message-bubble>
-                      Dad, this is your bank. Scan this QR code now or your account will be locked.
-                    </div>
-                    <div class="messageguard-demo__status">
-                      <span class="messageguard-demo__badge" data-message-badge>Suspicious</span>
-                      <span class="messageguard-demo__pulse" data-message-pulse></span>
-                    </div>
-                    <p class="messageguard-demo__alert" data-message-alert>
-                      Message Guard Alert: suspicious message detected. Alert sent to family.
-                    </p>
-                  </div>
-                </article>
-
-                <article class="solution-block" data-solution-block>
-                  <div class="solution-card-head">
-                    <span class="solution-icon" aria-hidden="true">
-                      <svg viewBox="0 0 64 64" role="presentation">
-                        <path d="M18 18h28v28H18z"></path>
-                        <path d="M26 26c2-3 4-4 6-4s4 1 6 4v12c-2 3-4 4-6 4s-4-1-6-4z"></path>
-                        <path d="M46 24h4a6 6 0 0 1 0 12h-4"></path>
-                      </svg>
-                    </span>
-                    <div>
-                      <p class="solution-label">Pillar 2</p>
-                      <h3 class="solution-card-title">Voice Guard</h3>
-                    </div>
-                  </div>
-
-                  <p class="solution-copy">
-                    Voice Guard analyzes forwarded voicemails and uploaded call clips for
-                    <span class="solution-key">scam-intent phrasing</span>, impersonation,
-                    and pressure tactics.
-                  </p>
-
-                  <ul class="solution-steps">
-                    <li>Voicemails are forwarded automatically or uploaded by the family.</li>
-                    <li>Audio is transcribed, scored, and explained in plain language.</li>
-                    <li>Families see whether the caller sounds safe, suspicious, or clearly fraudulent.</li>
-                  </ul>
-                </article>
-
-                <article class="solution-block" data-solution-block>
-                  <div class="solution-card-head">
-                    <span class="solution-icon" aria-hidden="true">
-                      <svg viewBox="0 0 64 64" role="presentation">
-                        <rect x="16" y="10" width="32" height="44" rx="8"></rect>
-                        <circle cx="32" cy="45" r="2.5"></circle>
-                        <path d="M24 20c0 6 2 11 8 15 6-4 8-9 8-15"></path>
-                      </svg>
-                    </span>
-                    <div>
-                      <p class="solution-label">Pillar 3</p>
-                      <h3 class="solution-card-title">Home Guard</h3>
-                    </div>
-                  </div>
-
-                  <p class="solution-copy">
-                    Home Guard turns an existing home camera or repurposed smartphone into an
-                    <span class="solution-key">on-device</span> fall-detection sensor that
-                    alerts the family when something happens.
-                  </p>
-
-                  <ul class="solution-steps">
-                    <li>The adult child mounts one device in a hallway or bathroom entrance.</li>
-                    <li>Fall detection runs locally, so non-event video stays in the home.</li>
-                    <li>If a fall is detected, the family is notified quickly with context and an event clip.</li>
-                  </ul>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="system-section section" data-observe="system" aria-labelledby="system-title">
-          <div class="section__content">
-            <div class="system-shell">
-              <h2 class="system-title" id="system-title" data-system-title>
-                Two Layers of Protection. One Seamless System.
-              </h2>
-
-              <div class="system-grid">
-                <article class="system-layer system-layer--left">
-                  <h3 class="system-layer__heading" data-system-left-heading>
-                    Layer 1: Real-Time Detection
-                  </h3>
-                  <p class="system-layer__body" data-system-left-body>
-                    Every incoming message, call, and suspicious link is screened in
-                    <span class="system-key" data-system-speed>600 milliseconds</span>,
-                    giving families an immediate first line of defense before pressure
-                    and confusion can build.
-                  </p>
-                </article>
-
-                <div class="system-divider" aria-hidden="true">
-                  <span class="system-divider__line"></span>
-                </div>
-
-                <article class="system-layer system-layer--right">
-                  <h3 class="system-layer__heading" data-system-right-heading>
-                    Layer 2: Deep Analysis
-                  </h3>
-                  <p class="system-layer__body" data-system-right-body>
-                    High-risk content is escalated to
-                    <span class="system-key" data-system-analysis
-                      >GPT 5.5-level analysis</span
-                    >
-                    for deeper reasoning, clearer context, and stronger confidence
-                    before the user acts.
-                  </p>
-                </article>
-              </div>
-
-              <p class="system-final" data-system-final>
-                Together, these layers deliver both speed and certainty...
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="ethics-section section" data-observe="ethics" aria-labelledby="ethics-title">
-          <div class="section__content">
-            <div class="ethics-shell">
-              <h2 class="ethics-title" id="ethics-title" data-ethics-title>
-                Privacy, Security, and Accountability
-              </h2>
-
-              <div class="ethics-copy">
-                <p class="ethics-block" data-ethics-block>
-                  Sensitive scam-check content is processed with care, and personal message
-                  data is <span class="ethics-key" data-ethics-delete>deleted within 24 hours</span>
-                  to reduce unnecessary retention.
-                </p>
-                <p class="ethics-block" data-ethics-block>
-                  The system is grounded in <span class="ethics-key ethics-key--underline" data-ethics-quality>verified, high-quality data</span>,
-                  so families are not forced to trust vague or untraceable signals.
-                </p>
-                <p class="ethics-block" data-ethics-block>
-                  Ongoing <span class="ethics-key ethics-key--glow" data-ethics-bias>bias mitigation</span>
-                  helps reduce harmful skew and keeps protection more consistent across
-                  different users and situations.
-                </p>
-                <p class="ethics-block ethics-block--strong" data-ethics-block>
-                  And when high-stakes warnings are delivered, accountability remains visible:
-                  what was flagged, why it was flagged, and how the user should respond.
-                </p>
-              </div>
-
-              <p class="ethics-final" data-ethics-final>
-                Built to protect. Designed to be trusted.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section
-          class="ahead-section section"
-          data-observe="ahead"
-          aria-labelledby="ahead-title"
-        >
-          <div class="section__content">
-            <div class="ahead-shell">
-              <h2 class="ahead-title" id="ahead-title" data-ahead-title>Looking Ahead</h2>
-
-              <div class="ahead-copy">
-                <article class="ahead-block" data-ahead-block>
-                  <span class="ahead-icon" aria-hidden="true">
-                    <svg viewBox="0 0 64 64" role="presentation">
-                      <circle cx="24" cy="24" r="8"></circle>
-                      <path d="M24 12V6M24 42v-6M12 24H6M42 24h-6M15 15l-4-4M33 33l4 4M33 15l4-4M15 33l-4 4"></path>
-                      <path d="M44 20h10v24H30V34"></path>
-                    </svg>
-                  </span>
-                  <p class="ahead-text">
-                    We will continue to strengthen our system by learning from real-world
-                    usage, improving detection accuracy, and refining how we respond to
-                    emerging scam patterns.
-                  </p>
-                </article>
-                <article class="ahead-block ahead-block--left" data-ahead-block>
-                  <span class="ahead-icon" aria-hidden="true">
-                    <svg viewBox="0 0 64 64" role="presentation">
-                      <circle cx="20" cy="24" r="7"></circle>
-                      <circle cx="44" cy="24" r="7"></circle>
-                      <path d="M14 48v-8c0-5 3-9 8-9h4"></path>
-                      <path d="M50 48v-8c0-5-3-9-8-9h-4"></path>
-                      <path d="M27 26h10M32 21v10"></path>
-                    </svg>
-                  </span>
-                  <p class="ahead-text">
-                    We aim to work alongside telecom providers and platform partners to
-                    extend protection at scale, reaching users before threats ever reach
-                    them.
-                  </p>
-                </article>
-                <article class="ahead-block" data-ahead-block>
-                  <span class="ahead-icon" aria-hidden="true">
-                    <svg viewBox="0 0 64 64" role="presentation">
-                      <path d="M16 20h32v26H16z"></path>
-                      <path d="M24 20v-4a8 8 0 0 1 16 0v4"></path>
-                      <path d="M24 33l6 6 10-10"></path>
-                    </svg>
-                  </span>
-                  <p class="ahead-text">
-                    Going forward, we wish to be able to have higher accuracy in our models
-                    by training our models on more
-                    <span class="ahead-key" data-ahead-sources
-                      >verified and credible sources</span
-                    >.
-                  </p>
-                </article>
-                <article class="ahead-block ahead-block--right" data-ahead-block>
-                  <span class="ahead-icon" aria-hidden="true">
-                    <svg viewBox="0 0 64 64" role="presentation">
-                      <path d="M20 18h24v28H20z"></path>
-                      <path d="M26 26c2-3 4-4 6-4s4 1 6 4v6c-2 3-4 4-6 4s-4-1-6-4z"></path>
-                      <path d="M14 46l10-6M50 46l-10-6"></path>
-                    </svg>
-                  </span>
-                  <p class="ahead-text">
-                    We wish to adapt our AI to deepfakes to make sure our model is still
-                    functional in the future.
-                  </p>
-                </article>
-              </div>
-
-              <p class="ahead-vision" data-ahead-vision>
-                to make AI a seamless, everyday safeguard, quietly protecting the people
-                who need it most.
-              </p>
-
-              <p class="ahead-final" data-ahead-final>
-                The future of safety should feel invisible, but always present.
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <span class="topbar__logo">AEGIS</span>
+    <div class="topbar__progress-wrap">
+      <div class="topbar__progress" id="progressBar"></div>
     </div>
-  </body>
+    <span class="topbar__counter" id="slideCounter">1 / 14</span>
+  </header>
+
+  <!-- SLIDES -->
+  <div class="slides" id="slides">
+
+    <!-- ─── SLIDE 1 · HERO ─────────────────────────────────── -->
+    <section class="slide s-hero" data-index="0">
+      <div class="slide__inner">
+        <p class="eyebrow">AIEC 2026 · Semi-Finals Pitch</p>
+        <h1 class="hero-title">
+          <span class="hero-title__a">Aegis</span>
+          <span class="hero-title__b">Family Safety</span>
+        </h1>
+        <p class="hero-sub">AI that watches over aging parents —<br>across the phone, the inbox, and the home.</p>
+        <div class="hero-pillars">
+          <span class="pill pill--msg">📱 MessageGuard</span>
+          <span class="pill pill--voice">🎙 VoiceGuard</span>
+          <span class="pill pill--home">🏠 HomeGuard</span>
+        </div>
+        <p class="hero-hint">Press <kbd>→</kbd> or click the arrow to begin</p>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- ─── SLIDE 2 · PROBLEM HOOK ──────────────────────────── -->
+    <section class="slide s-hook" data-index="1">
+      <div class="slide__inner narrow">
+        <p class="eyebrow">The Problem</p>
+        <p class="hook-pre">In the time you've been on this slide,</p>
+        <div class="hook-counter-wrap">
+          <span class="hook-counter" id="hookCounter">0</span>
+          <span class="hook-counter-unit">North American seniors<br>were targeted by scammers.</span>
+        </div>
+        <p class="hook-rate">One every <strong>30 seconds</strong>. Non-stop.</p>
+        <p class="hook-quote">"My granddaughter called me — except it wasn't her, it just sounded exactly like her. She said she'd been in an accident and needed me to wire money. I almost did it."<span class="hook-quote__src"> — P-007, age 71, Toronto</span></p>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 3 · TWO CRISES ────────────────────────────── -->
+    <section class="slide s-crises" data-index="2">
+      <div class="slide__inner">
+        <p class="eyebrow">Two Coinciding Crises</p>
+        <h2 class="slide-title">Fraud and falls — same people,<br>same homes, zero integrated solution.</h2>
+        <div class="crises-grid">
+          <div class="crisis-card" data-stagger="0">
+            <div class="crisis-top">
+              <span class="crisis-tag crisis-tag--fraud">SCAM FRAUD</span>
+              <span class="crisis-num">$12.5B</span>
+              <span class="crisis-denom">US consumer fraud losses · 2024</span>
+            </div>
+            <ul class="crisis-list">
+              <li>Adults 60+ report highest median losses per incident <span class="src">(FTC 2025)</span></li>
+              <li>CAD $638M in Canadian losses — true figure 5–10× higher <span class="src">(CAFC 2025)</span></li>
+              <li>AI voice cloning &amp; LLM-written phishing crossed consumer-quality threshold in 2024</li>
+              <li>Imposter scams now #1 fraud category by complaint volume</li>
+            </ul>
+          </div>
+          <div class="crisis-card" data-stagger="1">
+            <div class="crisis-top">
+              <span class="crisis-tag crisis-tag--falls">UNATTENDED FALLS</span>
+              <span class="crisis-num">1 in 4</span>
+              <span class="crisis-denom">Adults 65+ falls each year</span>
+            </div>
+            <ul class="crisis-list">
+              <li>3M emergency-department visits annually in the US <span class="src">(CDC 2024)</span></li>
+              <li>~38,000 deaths per year — falls are the 2nd leading cause of unintentional injury death <span class="src">(WHO)</span></li>
+              <li>85% of seniors' injury-related hospitalizations in Canada <span class="src">(Stats Canada)</span></li>
+              <li>Time-to-help is the single biggest lever on survival outcomes</li>
+            </ul>
+          </div>
+        </div>
+        <p class="crises-gap" data-stagger="2">Today the market sells a scam-call app <em>over here</em>, a medical pendant <em>over there</em>, a camera for a third fee.<br><strong>No one offers one account that does both.</strong></p>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 4 · WHY NOW ────────────────────────────────── -->
+    <section class="slide s-whynow" data-index="3">
+      <div class="slide__inner">
+        <p class="eyebrow">Why Now</p>
+        <h2 class="slide-title">Four tailwinds converging.</h2>
+        <div class="tailwinds">
+          <div class="tailwind" data-stagger="0">
+            <div class="tailwind__icon">📈</div>
+            <h3>Demographics</h3>
+            <p>US 65+ reaches <strong>73M by 2030</strong>. Canada hits <strong>10M</strong>. One in five North Americans will be a senior within five years.</p>
+          </div>
+          <div class="tailwind" data-stagger="1">
+            <div class="tailwind__icon">🤖</div>
+            <h3>AI-era fraud wave</h3>
+            <p>Generative voice cloning crossed consumer-quality in 2024. FTC 2024 losses up 25% YoY. CAFC 2024 up 19% YoY.</p>
+          </div>
+          <div class="tailwind" data-stagger="2">
+            <div class="tailwind__icon">📷</div>
+            <h3>CV at commodity cost</h3>
+            <p>YOLOv8n + MediaPipe BlazePose run <strong>30 FPS on a $75 SBC</strong> — that required $2,000 medical hardware in 2020.</p>
+          </div>
+          <div class="tailwind" data-stagger="3">
+            <div class="tailwind__icon">💳</div>
+            <h3>Caregiver digital fluency</h3>
+            <p>The buyer is Gen-X or Millennial. <strong>53M US caregivers</strong> spend avg $7,200/yr out-of-pocket. Comfortable with subscription SaaS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 5 · SOLUTION OVERVIEW ────────────────────── -->
+    <section class="slide s-solution" data-index="4">
+      <div class="slide__inner">
+        <p class="eyebrow">Our Solution</p>
+        <h2 class="slide-title">One household account.<br>Three AI pillars. Zero senior setup.</h2>
+        <div class="pillars-grid">
+          <div class="pillar-card" data-stagger="0">
+            <div class="pillar-card__head">
+              <span class="pillar-card__icon">
+                <svg viewBox="0 0 64 64"><rect x="10" y="14" width="44" height="32" rx="9"/><path d="M20 24h24M20 31h18"/><path d="M23 46l-6 8M41 46l6 8"/></svg>
+              </span>
+              <div>
+                <p class="pillar-card__num">Pillar 1</p>
+                <h3 class="pillar-card__name">MessageGuard</h3>
+              </div>
+            </div>
+            <p class="pillar-card__desc">Triages forwarded texts, links, and QR codes as Safe / Suspicious / Scam with a plain-language explanation. Result in under 800ms.</p>
+            <div class="pillar-card__setup"><span class="setup-tag">Setup:</span> Adult child enables share-sheet. Senior forwards with one tap.</div>
+          </div>
+          <div class="pillar-card" data-stagger="1">
+            <div class="pillar-card__head">
+              <span class="pillar-card__icon">
+                <svg viewBox="0 0 64 64"><circle cx="32" cy="20" r="10"/><path d="M14 52c0-10 8-17 18-17s18 7 18 17"/><path d="M32 38v-4M24 48h16"/></svg>
+              </span>
+              <div>
+                <p class="pillar-card__num">Pillar 2</p>
+                <h3 class="pillar-card__name">VoiceGuard</h3>
+              </div>
+            </div>
+            <p class="pillar-card__desc">Analyzes forwarded voicemails and call clips for scam-intent phrasing. Transcription → classifier → LLM explanation in under 3s.</p>
+            <div class="pillar-card__setup"><span class="setup-tag">Setup:</span> Adult child configures voicemail forwarding once. Senior role: zero.</div>
+          </div>
+          <div class="pillar-card" data-stagger="2">
+            <div class="pillar-card__head">
+              <span class="pillar-card__icon">
+                <svg viewBox="0 0 64 64"><rect x="16" y="8" width="32" height="48" rx="8"/><circle cx="32" cy="47" r="2.5"/><path d="M24 20c0 6 2 11 8 14 6-3 8-8 8-14"/></svg>
+              </span>
+              <div>
+                <p class="pillar-card__num">Pillar 3</p>
+                <h3 class="pillar-card__name">HomeGuard</h3>
+              </div>
+            </div>
+            <p class="pillar-card__desc">Turns an existing camera or old phone into an on-device fall detector. Raw video never leaves the home. Only a 3-second event clip is encrypted and sent on fall.</p>
+            <div class="pillar-card__setup"><span class="setup-tag">Setup:</span> Adult child mounts device (~10 min), pairs via QR. Senior role: zero.</div>
+          </div>
+        </div>
+        <p class="solution-price-note">Family Standard · CAD $12.99 / USD $9.99 per household per month</p>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 6 · MESSAGEGUARD DEMO ─────────────────────── -->
+    <section class="slide s-demo-msg" data-index="5">
+      <div class="slide__inner">
+        <p class="eyebrow">Pillar 1 · Interactive Demo</p>
+        <h2 class="slide-title">MessageGuard</h2>
+        <div class="demo-layout">
+          <div class="demo-sidebar">
+            <p class="demo-how-title">Pipeline</p>
+            <ol class="demo-pipeline">
+              <li>Share-sheet → FastAPI gateway</li>
+              <li>URL regex extraction</li>
+              <li>GBDT classifier (18 features) + threat feeds</li>
+              <li>Sandboxed headless fetch (link never opened on device)</li>
+              <li>GPT-5.4-mini vision for QR / borderline cases</li>
+              <li>Verdict pushed to family dashboard</li>
+            </ol>
+            <div class="demo-stat">
+              <span class="demo-stat__n">91%</span>
+              <span class="demo-stat__l">accuracy · 240-message blind set · AUC 0.94</span>
+            </div>
+          </div>
+          <div class="demo-phone-wrap">
+            <div class="demo-phone">
+              <div class="demo-phone__notch"></div>
+              <div class="demo-phone__screen">
+                <div class="demo-phone__topbar">Messages · Unknown</div>
+                <div class="demo-phone__chat">
+                  <div class="demo-bubble" id="demoBubble">Dad, this is your bank. Your account has been compromised. Scan this QR code NOW or your account will be locked within 2 hours.</div>
+                </div>
+                <div class="demo-phone__input-row">
+                  <textarea class="demo-text-input" id="demoTextInput" placeholder="Try your own message…" rows="2"></textarea>
+                  <button class="demo-analyze-btn" id="demoAnalyzeBtn">Analyze →</button>
+                </div>
+              </div>
+            </div>
+            <div class="demo-verdict-panel" id="demoVerdictPanel">
+              <div class="demo-verdict-badge" id="demoVerdictBadge"></div>
+              <ul class="demo-verdict-reasons" id="demoVerdictReasons"></ul>
+              <p class="demo-verdict-alert" id="demoVerdictAlert"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 7 · VOICEGUARD DEMO ───────────────────────── -->
+    <section class="slide s-demo-voice" data-index="6">
+      <div class="slide__inner">
+        <p class="eyebrow">Pillar 2 · Interactive Demo</p>
+        <h2 class="slide-title">VoiceGuard</h2>
+        <div class="demo-layout">
+          <div class="demo-sidebar">
+            <p class="demo-how-title">Pipeline</p>
+            <ol class="demo-pipeline">
+              <li>Voicemail forwarded automatically via webhook</li>
+              <li>gpt-4o-transcribe → text</li>
+              <li>In-house LR classifier (28 lexical features) runs first</li>
+              <li>LR catches 78% of danger calls alone, reducing LLM cost</li>
+              <li>gpt-5.4-mini generates plain-language verdict</li>
+              <li>Result in &lt;3s · family push alert</li>
+            </ol>
+            <div class="demo-stat">
+              <span class="demo-stat__n">94%</span>
+              <span class="demo-stat__l">accuracy · F1 0.93 · 160-call blind set · EER 4.2%</span>
+            </div>
+          </div>
+          <div class="voice-demo-wrap">
+            <div class="voice-player-card">
+              <div class="voice-waveform" id="voiceWaveform">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p class="voice-label">Incoming voicemail · unknown caller</p>
+              <button class="voice-play-btn" id="voicePlayBtn">▶ Play &amp; Analyze</button>
+            </div>
+            <div class="voice-transcript-card" id="voiceTranscriptCard">
+              <p class="voice-transcript-title">Transcript</p>
+              <p class="voice-transcript-text" id="voiceTranscriptText"></p>
+            </div>
+            <div class="voice-verdict-card" id="voiceVerdictCard">
+              <div class="voice-verdict-badge" id="voiceVerdictBadge"></div>
+              <div class="voice-signals" id="voiceSignals"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 8 · HOMEGUARD ─────────────────────────────── -->
+    <section class="slide s-homeguard" data-index="7">
+      <div class="slide__inner">
+        <p class="eyebrow">Pillar 3</p>
+        <h2 class="slide-title">HomeGuard</h2>
+        <div class="hg-layout">
+          <div class="hg-info">
+            <p class="hg-tagline">Non-wearable. Privacy-first. Always on.</p>
+            <ul class="hg-features">
+              <li><span class="check">✓</span> Existing camera or repurposed phone — no new hardware</li>
+              <li><span class="check">✓</span> YOLOv8n + MediaPipe BlazePose + LSTM fall classifier on-device at 30 FPS</li>
+              <li><span class="check">✓</span> Raw video <strong>never</strong> leaves the home</li>
+              <li><span class="check">✓</span> Only a 3-second E2E-encrypted clip on fall event</li>
+              <li><span class="check">✓</span> Family FCM alert in ≤500ms</li>
+              <li><span class="check">✓</span> Validated across 4 mobility categories + FairFace bias bins</li>
+            </ul>
+            <div class="hg-stats-row">
+              <div class="hg-stat">
+                <span class="hg-stat__n">89%</span>
+                <span class="hg-stat__l">recall<br>UR Fall held-out</span>
+              </div>
+              <div class="hg-stat">
+                <span class="hg-stat__n">74%</span>
+                <span class="hg-stat__l">guardians rate<br>fall-anxiety ≥7/10</span>
+              </div>
+              <div class="hg-stat">
+                <span class="hg-stat__n">64%</span>
+                <span class="hg-stat__l">seniors accept<br>hallway-only camera</span>
+              </div>
+            </div>
+            <p class="hg-quote">"I won't wear a pendant. They make you feel old. But a camera in the hallway? As long as nobody is watching the video, I don't mind." — P-011, age 76</p>
+          </div>
+          <div class="hg-visual">
+            <canvas class="hg-canvas" id="hgCanvas" width="280" height="380"></canvas>
+            <div class="hg-status" id="hgStatus">Monitoring…</div>
+            <button class="hg-demo-btn" id="hgDemoBtn">Simulate fall →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 9 · TECHNOLOGY ────────────────────────────── -->
+    <section class="slide s-tech" data-index="8">
+      <div class="slide__inner">
+        <p class="eyebrow">Technology</p>
+        <h2 class="slide-title">Three pipelines. One hub.<br>Original ML assets — not a ChatGPT wrapper.</h2>
+        <div class="tech-table">
+          <div class="tech-table__head">
+            <span>Pillar</span>
+            <span>Models &amp; Tools</span>
+            <span>Runs where</span>
+            <span>Accuracy</span>
+          </div>
+          <div class="tech-row" data-stagger="0">
+            <span class="tech-pillar-label">MessageGuard</span>
+            <span class="tech-models">In-house GBDT (18 features) · Google Safe Browsing v5 · PhishTank · URLhaus · GPT-5.4-mini vision · ZXing QR</span>
+            <span class="tech-where">Cloud · sandboxed fetch</span>
+            <span class="tech-acc good">91% · AUC 0.94 · p95 800ms</span>
+          </div>
+          <div class="tech-row" data-stagger="1">
+            <span class="tech-pillar-label">VoiceGuard</span>
+            <span class="tech-models">gpt-4o-transcribe · In-house LR (28 lexical features) · gpt-5.4-mini explainer · claude-sonnet-4-6 fallback</span>
+            <span class="tech-where">Cloud · FastAPI + Redis</span>
+            <span class="tech-acc good">94% · F1 0.93 · &lt;3s end-to-end</span>
+          </div>
+          <div class="tech-row" data-stagger="2">
+            <span class="tech-pillar-label">HomeGuard</span>
+            <span class="tech-models">YOLOv8n (frozen, COCO) · MediaPipe BlazePose 33-pt · In-house LR fall classifier (7 pose features) · gpt-5.4-nano summary</span>
+            <span class="tech-where">Edge-only · on-device</span>
+            <span class="tech-acc good">89% recall · ≤500ms alert</span>
+          </div>
+        </div>
+        <div class="tech-moat">
+          <p class="tech-moat__title">Our original ML assets (scikit-learn, CPU-trainable in minutes)</p>
+          <div class="tech-moat__list">
+            <span class="moat-item">LR scam classifier · 28 hand-engineered lexical features · &lt;2 min training</span>
+            <span class="moat-item">GBDT URL classifier · 18 features · AUC 0.94 · ~30s training</span>
+            <span class="moat-item">LR fall classifier · 7 pose features · 89% recall · 30FPS on $75 SBC</span>
+          </div>
+        </div>
+        <p class="tech-privacy-note">🔒 HomeGuard raw video never leaves home · All user content purged ≤24h · Hard-coded no-training opt-out · TLS 1.3 + AES-256</p>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 10 · MARKET ────────────────────────────────── -->
+    <section class="slide s-market" data-index="9">
+      <div class="slide__inner">
+        <p class="eyebrow">Market Opportunity</p>
+        <h2 class="slide-title">39M households.<br>Two unserved needs. One hub.</h2>
+        <div class="market-layout">
+          <div class="market-funnel">
+            <div class="mf-layer mf-tam" data-stagger="0">
+              <span class="mf-num">39M</span>
+              <span class="mf-label">TAM · All NA 65+ households</span>
+            </div>
+            <div class="mf-arrow" aria-hidden="true">▼</div>
+            <div class="mf-layer mf-sam" data-stagger="1">
+              <span class="mf-num">9.4M</span>
+              <span class="mf-label">SAM · Digitally-reachable w/ caregiver (24% of TAM)</span>
+            </div>
+            <div class="mf-arrow" aria-hidden="true">▼</div>
+            <div class="mf-layer mf-som" data-stagger="2">
+              <span class="mf-num">620K</span>
+              <span class="mf-label">SOM Yr3 · Caregiver channel · ~CAD $97M ARR</span>
+            </div>
+          </div>
+          <div class="market-milestones">
+            <div class="market-ms" data-stagger="0">
+              <span class="market-ms__val">5,000 HH</span>
+              <span class="market-ms__lbl">Year 1 target</span>
+              <span class="market-ms__arr">CAD $780K ARR</span>
+            </div>
+            <div class="market-ms" data-stagger="1">
+              <span class="market-ms__val">2,810 HH</span>
+              <span class="market-ms__lbl">Breakeven</span>
+              <span class="market-ms__arr">CAD $23K fixed costs</span>
+            </div>
+            <div class="market-ms market-ms--hi" data-stagger="2">
+              <span class="market-ms__val">8.0×</span>
+              <span class="market-ms__lbl">LTV / CAC</span>
+              <span class="market-ms__arr">LTV CAD $257 · CAC CAD $32</span>
+            </div>
+            <div class="market-ms" data-stagger="3">
+              <span class="market-ms__val">63%</span>
+              <span class="market-ms__lbl">Gross margin</span>
+              <span class="market-ms__arr">Improves to 71% Year 2</span>
+            </div>
+          </div>
+        </div>
+        <p class="market-driver">Scam losses up 25% YoY (FTC) · Falls cost USD $50B/yr in US medical costs (CDC) · AARP: 53M caregivers avg $7,200/yr out-of-pocket</p>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 11 · COMPETITION ───────────────────────────── -->
+    <section class="slide s-comp" data-index="10">
+      <div class="slide__inner">
+        <p class="eyebrow">Competitive Landscape</p>
+        <h2 class="slide-title">The moat is the workflow,<br>not the model.</h2>
+        <div class="comp-table">
+          <div class="comp-head">
+            <span>Product</span>
+            <span>Voice scam</span>
+            <span>Text / QR</span>
+            <span>Fall detect</span>
+            <span>Non-wearable</span>
+            <span>Family alerts</span>
+            <span>Senior setup</span>
+          </div>
+          <div class="comp-row comp-row--other" data-stagger="0">
+            <span class="comp-name">Life Alert / Lifeline</span>
+            <span class="cx">✗</span><span class="cx">✗</span><span class="cp">~</span>
+            <span class="cx">✗</span><span class="cp">~</span><span class="cy comp-bad">High</span>
+          </div>
+          <div class="comp-row comp-row--other" data-stagger="1">
+            <span class="comp-name">Apple Watch</span>
+            <span class="cx">✗</span><span class="cx">✗</span><span class="cy">✓</span>
+            <span class="cx">✗</span><span class="cy">✓</span><span class="cy comp-bad">High</span>
+          </div>
+          <div class="comp-row comp-row--other" data-stagger="2">
+            <span class="comp-name">Eversafe</span>
+            <span class="cx">✗</span><span class="cp">~</span><span class="cx">✗</span>
+            <span class="cy">✓</span><span class="cy">✓</span><span class="cp">Med</span>
+          </div>
+          <div class="comp-row comp-row--other" data-stagger="3">
+            <span class="comp-name">ChatGPT / Claude</span>
+            <span class="cp">~</span><span class="cp">~</span><span class="cx">✗</span>
+            <span class="cy">✓</span><span class="cx">✗</span><span class="cy comp-bad">Very High</span>
+          </div>
+          <div class="comp-row comp-row--aegis" data-stagger="4">
+            <span class="comp-name comp-name--aegis">Aegis ✦</span>
+            <span class="cy cy--aegis">✓</span><span class="cy cy--aegis">✓</span><span class="cy cy--aegis">✓</span>
+            <span class="cy cy--aegis">✓</span><span class="cy cy--aegis">✓</span><span class="cy cy--aegis comp-good">Zero</span>
+          </div>
+        </div>
+        <p class="comp-note">61% of seniors in our study could not copy-paste a message into ChatGPT on a first try.<br>Protection that requires the senior to prompt is not protection.</p>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 12 · BUSINESS MODEL ───────────────────────── -->
+    <section class="slide s-biz" data-index="11">
+      <div class="slide__inner">
+        <p class="eyebrow">Business Model</p>
+        <h2 class="slide-title">Household subscription.<br>Family-first pricing.</h2>
+        <div class="pricing-row">
+          <div class="pricing-card" data-stagger="0">
+            <p class="pricing-card__name">Family Free</p>
+            <p class="pricing-card__price">CAD $0</p>
+            <ul class="pricing-card__features">
+              <li>1 VoiceGuard / day</li>
+              <li>3 MessageGuard / day</li>
+              <li>1 HomeGuard camera</li>
+              <li>No event storage</li>
+            </ul>
+            <p class="pricing-card__share">~70% of signups · top of funnel</p>
+          </div>
+          <div class="pricing-card pricing-card--hero" data-stagger="1">
+            <span class="pricing-card__badge">Core revenue tier</span>
+            <p class="pricing-card__name">Family Standard</p>
+            <p class="pricing-card__price">CAD $12.99 <span class="pricing-per">/mo</span></p>
+            <ul class="pricing-card__features">
+              <li>Unlimited Voice + Message</li>
+              <li>Up to 3 HomeGuard cameras</li>
+              <li>30-day event storage</li>
+              <li>Priority alert routing</li>
+            </ul>
+            <p class="pricing-card__share">~25% of signups · ~85% of revenue</p>
+          </div>
+          <div class="pricing-card" data-stagger="2">
+            <p class="pricing-card__name">Family Plus</p>
+            <p class="pricing-card__price">CAD $24.99 <span class="pricing-per">/mo</span></p>
+            <ul class="pricing-card__features">
+              <li>Everything in Standard</li>
+              <li>Up to 10 cameras</li>
+              <li>90-day storage</li>
+              <li>Professional monitoring bridge</li>
+            </ul>
+            <p class="pricing-card__share">~5% · multi-senior households</p>
+          </div>
+        </div>
+        <div class="unit-econ">
+          <div class="ue-item" data-stagger="0">
+            <span class="ue-num">CAD $4.80</span>
+            <span class="ue-lbl">Variable cost / HH / mo</span>
+          </div>
+          <div class="ue-divider">→</div>
+          <div class="ue-item ue-item--hi" data-stagger="1">
+            <span class="ue-num">63%</span>
+            <span class="ue-lbl">Gross margin</span>
+          </div>
+          <div class="ue-divider">→</div>
+          <div class="ue-item" data-stagger="2">
+            <span class="ue-num">CAD $257</span>
+            <span class="ue-lbl">LTV (18-mo retention)</span>
+          </div>
+          <div class="ue-divider">→</div>
+          <div class="ue-item ue-item--hi" data-stagger="3">
+            <span class="ue-num">8.0×</span>
+            <span class="ue-lbl">LTV / CAC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 13 · VALIDATION ────────────────────────────── -->
+    <section class="slide s-validation" data-index="12">
+      <div class="slide__inner">
+        <p class="eyebrow">Market Validation · n=48 guardian-senior study · Feb–Mar 2026</p>
+        <h2 class="slide-title">5 hypotheses tested.<br>5 hypotheses passed.</h2>
+        <div class="hypotheses">
+          <div class="hyp" data-stagger="0">
+            <div class="hyp__label">H1 · Scam exposure widespread (target ≥60%)</div>
+            <div class="hyp__bar-wrap"><div class="hyp__bar" data-val="78" style="--c:#3db96a"></div></div>
+            <div class="hyp__nums"><span class="hyp__obs">78% observed</span><span class="hyp__pass">PASS</span></div>
+          </div>
+          <div class="hyp" data-stagger="1">
+            <div class="hyp__label">H2 · Senior unaided detection below chance (target &lt;50%)</div>
+            <div class="hyp__bar-wrap"><div class="hyp__bar" data-val="39" style="--c:#e8793a"></div></div>
+            <div class="hyp__nums"><span class="hyp__obs">39% accuracy — worse than random</span><span class="hyp__pass">PASS</span></div>
+          </div>
+          <div class="hyp" data-stagger="2">
+            <div class="hyp__label">H3 · Guardians willing to pay CAD $12.99/mo (target ≥35%)</div>
+            <div class="hyp__bar-wrap"><div class="hyp__bar" data-val="41" style="--c:#3db96a"></div></div>
+            <div class="hyp__nums"><span class="hyp__obs">41% · 73% prefer bundled pricing</span><span class="hyp__pass">PASS</span></div>
+          </div>
+          <div class="hyp" data-stagger="3">
+            <div class="hyp__label">H4 · Guardian NPS exceeds Senior NPS by ≥15 pts</div>
+            <div class="hyp__bar-wrap"><div class="hyp__bar" data-val="68" style="--c:#3db96a"></div></div>
+            <div class="hyp__nums"><span class="hyp__obs">+22 point gap (NPS +43 vs +21)</span><span class="hyp__pass">PASS</span></div>
+          </div>
+          <div class="hyp" data-stagger="4">
+            <div class="hyp__label">H5 · Guardian fall-anxiety ≥7/10 + senior accepts hallway camera (target ≥60% + ≥50%)</div>
+            <div class="hyp__bar-wrap"><div class="hyp__bar" data-val="74" style="--c:#3db96a"></div></div>
+            <div class="hyp__nums"><span class="hyp__obs">74% fall-anxiety ≥7 · 64% camera acceptance</span><span class="hyp__pass">PASS</span></div>
+          </div>
+        </div>
+        <div class="validation-bonus">
+          <span>84 wait-list signups during research window</span>
+          <span>90% prototype task-success rate (9/10)</span>
+          <span>Guardian satisfaction 8.7/10</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 14 · ROADMAP + ASK ────────────────────────── -->
+    <section class="slide s-ask" data-index="13">
+      <div class="slide__inner">
+        <p class="eyebrow">Roadmap &amp; The Ask</p>
+        <h2 class="slide-title">CAD $60,000 seed<br>to launch in Ontario + California by Q4 2026.</h2>
+        <div class="ask-layout">
+          <div class="timeline">
+            <div class="tl-item tl-done" data-stagger="0">
+              <div class="tl-dot tl-dot--done"></div>
+              <div class="tl-body">
+                <span class="tl-date">Feb – Apr 2026</span>
+                <span class="tl-title">Discovery + MVP</span>
+                <span class="tl-desc">48 user interviews · VoiceGuard + MessageGuard demo-ready · 84 waitlist signups</span>
+              </div>
+            </div>
+            <div class="tl-item tl-now" data-stagger="1">
+              <div class="tl-dot tl-dot--now"></div>
+              <div class="tl-body">
+                <span class="tl-date">Apr – May 2026 ← NOW</span>
+                <span class="tl-title">AIEC Semi-Finals + HomeGuard MVP</span>
+                <span class="tl-desc">On-device fall detector live · 3-pillar suite demo-ready</span>
+              </div>
+            </div>
+            <div class="tl-item" data-stagger="2">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-date">June 13, 2026</span>
+                <span class="tl-title">AIEC Finals</span>
+                <span class="tl-desc">In-person pitch + poster · Full 3-pillar live demo</span>
+              </div>
+            </div>
+            <div class="tl-item" data-stagger="3">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-date">Aug – Oct 2026</span>
+                <span class="tl-title">Commercial v1 — ON + CA</span>
+                <span class="tl-desc">Public launch at aegisfamily.ai · Paid marketing · Elder-care agency partnerships</span>
+              </div>
+            </div>
+            <div class="tl-item" data-stagger="4">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-date">2027+</span>
+                <span class="tl-title">B2B2C + Expansion</span>
+                <span class="tl-desc">White-label for senior-care communities · MedGuard · RouteGuard</span>
+              </div>
+            </div>
+          </div>
+          <div class="ask-breakdown">
+            <p class="ask-breakdown__title">Seed allocation</p>
+            <div class="ask-row" data-stagger="0"><span class="ask-pct">~40%</span><span class="ask-lbl">API + cloud infra during beta (Whisper, LLMs, Firebase, FCM)</span></div>
+            <div class="ask-row" data-stagger="1"><span class="ask-pct">~25%</span><span class="ask-lbl">Threat-intel feeds + domain + tooling</span></div>
+            <div class="ask-row" data-stagger="2"><span class="ask-pct">~20%</span><span class="ask-lbl">User acquisition — caregiver channel</span></div>
+            <div class="ask-row" data-stagger="3"><span class="ask-pct">~15%</span><span class="ask-lbl">Legal, compliance, elder-care partnerships</span></div>
+            <div class="ask-vision">
+              <p>Breakeven at <strong>2,810</strong> paying households.</p>
+              <p>Year 1 target: <strong>5,000 HH · CAD $780K ARR</strong>.</p>
+              <p class="ask-vision__close">The future of safety should feel invisible — but always present.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /slides -->
+
+  <!-- NAV ARROWS -->
+  <button class="nav-arrow nav-arrow--prev" id="navPrev" aria-label="Previous slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="nav-arrow nav-arrow--next" id="navNext" aria-label="Next slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+
+  <!-- DOTS NAV -->
+  <nav class="dots" id="dotsNav" aria-label="Slide navigation"></nav>
+
+</div><!-- /deck -->
+
+<script src="script.js"></script>
+</body>
 </html>
