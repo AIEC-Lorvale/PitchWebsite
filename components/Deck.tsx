@@ -16,6 +16,7 @@ import SlideMarket     from './slides/SlideMarket'
 import SlideComp       from './slides/SlideComp'
 import SlideBusiness   from './slides/SlideBusiness'
 import SlideValidation from './slides/SlideValidation'
+import SlideEthics     from './slides/SlideEthics'
 import SlideAsk        from './slides/SlideAsk'
 
 export interface SlideProps {
@@ -27,7 +28,7 @@ const SLIDE_COMPONENTS = [
   SlideHero, SlideHook, SlideCrises, SlideWhyNow,
   SlideSolution, SlideMsgDemo, SlideVoiceDemo, SlideHomeGuard,
   SlideTech, SlideMarket, SlideComp, SlideBusiness,
-  SlideValidation, SlideAsk,
+  SlideValidation, SlideEthics, SlideAsk,
 ]
 
 export default function Deck() {
