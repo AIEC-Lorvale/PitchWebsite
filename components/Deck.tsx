@@ -4,10 +4,7 @@ import TopBar from './TopBar'
 import NavArrows from './NavArrows'
 import DotsNav from './DotsNav'
 import SlideHero       from './slides/SlideHero'
-import SlideHook       from './slides/SlideHook'
-import SlideCrises     from './slides/SlideCrises'
-import SlideWhyNow     from './slides/SlideWhyNow'
-import SlideSolution   from './slides/SlideSolution'
+import SlidePurpose    from './slides/SlidePurpose'
 import SlideMsgDemo    from './slides/SlideMsgDemo'
 import SlideVoiceDemo  from './slides/SlideVoiceDemo'
 import SlideHomeGuard  from './slides/SlideHomeGuard'
@@ -25,10 +22,10 @@ export interface SlideProps {
 }
 
 const SLIDE_COMPONENTS = [
-  SlideHero, SlideHook, SlideCrises, SlideWhyNow,
-  SlideSolution, SlideMsgDemo, SlideVoiceDemo, SlideHomeGuard,
-  SlideTech, SlideMarket, SlideComp, SlideBusiness,
-  SlideValidation, SlideEthics, SlideAsk,
+  SlideHero, SlidePurpose,
+  SlideMsgDemo, SlideVoiceDemo, SlideHomeGuard,
+  SlideTech, SlideEthics, SlideValidation,
+  SlideMarket, SlideComp, SlideBusiness, SlideAsk,
 ]
 
 export default function Deck() {
