@@ -4,50 +4,75 @@ import type { SlideProps } from '../Deck'
 export default function SlideMarket({ isActive, isPrev }: SlideProps) {
   return (
     <section className={`slide s-market${isActive ? ' is-active' : ''}${isPrev ? ' is-prev' : ''}`}>
-      <div className="slide__inner">
-        <p className="eyebrow">Market Opportunity</p>
-        <h2 className="slide-title">39M households.<br />Two unserved needs. One hub.</h2>
-        <div className="market-layout">
-          <div className="market-funnel">
-            <div className="mf-layer mf-tam" data-stagger="0">
-              <span className="mf-num">39M</span>
-              <span className="mf-label">TAM · All NA 65+ households</span>
-            </div>
-            <div className="mf-arrow" aria-hidden="true">▼</div>
-            <div className="mf-layer mf-sam" data-stagger="1">
-              <span className="mf-num">9.4M</span>
-              <span className="mf-label">SAM · Digitally-reachable w/ caregiver (24% of TAM)</span>
-            </div>
-            <div className="mf-arrow" aria-hidden="true">▼</div>
-            <div className="mf-layer mf-som" data-stagger="2">
-              <span className="mf-num">620K</span>
-              <span className="mf-label">SOM Yr3 · Caregiver channel · ~CAD $97M ARR</span>
-            </div>
+      <div className="slide__inner" style={{ gap: '1.1rem' }}>
+        <p className="eyebrow">Market &amp; Competitive Landscape</p>
+        <h2 className="slide-title">39M households.<br />No integrated solution exists.</h2>
+
+        {/* Market funnel — condensed to horizontal 3-column row */}
+        <div
+          data-stagger="0"
+          style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '0.75rem' }}
+        >
+          <div className="mf-layer mf-tam">
+            <span className="mf-num">39M</span>
+            <span className="mf-label">TAM · All NA 65+ households</span>
           </div>
-          <div className="market-milestones">
-            <div className="market-ms" data-stagger="0">
-              <span className="market-ms__val">5,000 HH</span>
-              <span className="market-ms__lbl">Year 1 target</span>
-              <span className="market-ms__arr">CAD $780K ARR</span>
-            </div>
-            <div className="market-ms" data-stagger="1">
-              <span className="market-ms__val">2,810 HH</span>
-              <span className="market-ms__lbl">Breakeven</span>
-              <span className="market-ms__arr">CAD $23K fixed costs</span>
-            </div>
-            <div className="market-ms market-ms--hi" data-stagger="2">
-              <span className="market-ms__val">8.0×</span>
-              <span className="market-ms__lbl">LTV / CAC</span>
-              <span className="market-ms__arr">LTV CAD $257 · CAC CAD $32</span>
-            </div>
-            <div className="market-ms" data-stagger="3">
-              <span className="market-ms__val">63%</span>
-              <span className="market-ms__lbl">Gross margin</span>
-              <span className="market-ms__arr">Improves to 71% Year 2</span>
-            </div>
+          <div className="mf-layer mf-sam">
+            <span className="mf-num">9.4M</span>
+            <span className="mf-label">SAM · Digitally-reachable with caregiver</span>
+          </div>
+          <div
+            className="mf-layer"
+            style={{ borderColor: 'rgba(61,185,106,0.35)', background: 'rgba(61,185,106,0.07)' }}
+          >
+            <span className="mf-num" style={{ color: 'var(--green)' }}>~$97M</span>
+            <span className="mf-label">SOM Yr 3 ARR · 620K households</span>
           </div>
         </div>
-        <p className="market-driver">Scam losses up 25% YoY (FTC) · Falls cost USD $50B/yr in US medical costs (CDC) · AARP: 53M caregivers avg $7,200/yr out-of-pocket</p>
+
+        {/* Competitive table */}
+        <div className="comp-table" data-stagger="1">
+          <div className="comp-head">
+            <span>Product</span>
+            <span>Voice scam</span>
+            <span>Text / QR</span>
+            <span>Fall detect</span>
+            <span>Non-wearable</span>
+            <span>Family alerts</span>
+            <span>Senior setup</span>
+          </div>
+          <div className="comp-row comp-row--other">
+            <span className="comp-name">Life Alert / Lifeline</span>
+            <span className="cx">✗</span><span className="cx">✗</span><span className="cp">~</span>
+            <span className="cx">✗</span><span className="cp">~</span><span className="cy comp-bad">High</span>
+          </div>
+          <div className="comp-row comp-row--other">
+            <span className="comp-name">Apple Watch</span>
+            <span className="cx">✗</span><span className="cx">✗</span><span className="cy">✓</span>
+            <span className="cx">✗</span><span className="cy">✓</span><span className="cy comp-bad">High</span>
+          </div>
+          <div className="comp-row comp-row--other">
+            <span className="comp-name">Eversafe</span>
+            <span className="cx">✗</span><span className="cp">~</span><span className="cx">✗</span>
+            <span className="cy">✓</span><span className="cy">✓</span><span className="cp">Med</span>
+          </div>
+          <div className="comp-row comp-row--other">
+            <span className="comp-name">ChatGPT / Claude</span>
+            <span className="cp">~</span><span className="cp">~</span><span className="cx">✗</span>
+            <span className="cy">✓</span><span className="cx">✗</span><span className="cy comp-bad">Very High</span>
+          </div>
+          <div className="comp-row comp-row--aegis">
+            <span className="comp-name comp-name--aegis">Aegis ✦</span>
+            <span className="cy cy--aegis">✓</span><span className="cy cy--aegis">✓</span><span className="cy cy--aegis">✓</span>
+            <span className="cy cy--aegis">✓</span><span className="cy cy--aegis">✓</span>
+            <span className="cy cy--aegis comp-good">Zero</span>
+          </div>
+        </div>
+
+        <p className="comp-note" data-stagger="2">
+          61% of seniors in our study could not copy-paste a message into ChatGPT on a first try.<br />
+          Protection that requires the senior to prompt is not protection.
+        </p>
       </div>
     </section>
   )

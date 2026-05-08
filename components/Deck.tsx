@@ -10,7 +10,6 @@ import SlideVoiceDemo  from './slides/SlideVoiceDemo'
 import SlideHomeGuard  from './slides/SlideHomeGuard'
 import SlideTech       from './slides/SlideTech'
 import SlideMarket     from './slides/SlideMarket'
-import SlideComp       from './slides/SlideComp'
 import SlideBusiness   from './slides/SlideBusiness'
 import SlideValidation from './slides/SlideValidation'
 import SlideEthics     from './slides/SlideEthics'
@@ -25,7 +24,7 @@ const SLIDE_COMPONENTS = [
   SlideHero, SlidePurpose,
   SlideMsgDemo, SlideVoiceDemo, SlideHomeGuard,
   SlideTech, SlideEthics, SlideValidation,
-  SlideMarket, SlideComp, SlideBusiness, SlideAsk,
+  SlideMarket, SlideBusiness, SlideAsk,
 ]
 
 export default function Deck() {

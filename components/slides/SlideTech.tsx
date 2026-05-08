@@ -4,104 +4,117 @@ import type { SlideProps } from '../Deck'
 export default function SlideTech({ isActive, isPrev }: SlideProps) {
   return (
     <section className={`slide s-tech${isActive ? ' is-active' : ''}${isPrev ? ' is-prev' : ''}`}>
-      <div className="slide__inner arch-layout">
-        <header className="arch-head">
-          <h2 className="arch-title">System Architecture</h2>
-          <p className="arch-subtitle">Multi-input - Layered detection - Unified output</p>
-        </header>
+      <div className="slide__inner">
+        <p className="eyebrow">AI Technology</p>
+        <h2 className="slide-title">Two pipelines. Built for speed,<br />privacy, and real families.</h2>
 
-        <div className="arch-sections">
-          <article className="arch-section">
-            <div className="arch-section-head">
-              <p className="arch-kicker">Scam Detection System</p>
-              <h3 className="arch-section-title">Scam Detection</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem' }}>
+
+          {/* ── Scam Detection ── */}
+          <div
+            data-stagger="0"
+            style={{
+              padding: '1.4rem',
+              border: '1px solid rgba(255,255,255,0.1)',
+              borderRadius: '18px',
+              background: 'rgba(255,255,255,0.035)',
+              display: 'grid',
+              gap: '1rem',
+              alignContent: 'start',
+            }}
+          >
+            <div>
+              <p className="eyebrow" style={{ marginBottom: '0.4rem' }}>Scam Detection</p>
+              <p style={{ fontSize: 'clamp(1.05rem, 1.8vw, 1.35rem)', fontWeight: 700, color: '#fff', lineHeight: 1.2 }}>
+                VoiceGuard + MessageGuard
+              </p>
             </div>
 
-            <section className="arch-stage">
-              <p className="arch-stage-label">Input Normalization</p>
-              <p className="arch-flowline"><strong>Voice</strong> -&gt; Speech-to-Text</p>
-              <p className="arch-flowline"><strong>Messages</strong> -&gt; Text</p>
-              <p className="arch-flowmerge">Both inputs merge into:</p>
-              <p className="arch-flowtarget">TEXT PIPELINE</p>
-            </section>
+            <ul style={{ listStyle: 'none', display: 'grid', gap: '0.65rem' }}>
+              {[
+                <><strong style={{ color: 'var(--text)' }}>Layer 1</strong> — Custom ML classifier, keyword + pattern detection</>,
+                <><strong style={{ color: 'var(--text)' }}>Layer 2</strong> — LLM reasoning, context + intent analysis</>,
+                <>Handles voice (STT) and text in one unified pipeline</>,
+                <>Risk score + plain-language explanation + alert trigger</>,
+              ].map((item, i) => (
+                <li key={i} style={{ fontSize: '0.88rem', color: 'var(--text-muted)', paddingLeft: '1rem', position: 'relative', lineHeight: 1.55 }}>
+                  <span style={{ position: 'absolute', left: 0, color: 'var(--accent)', fontWeight: 700 }}>›</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
 
-            <section className="arch-stage">
-              <p className="arch-stage-label">Two-Layer Detection</p>
-              <div className="arch-layer">
-                <p className="arch-layer-id">Layer 1</p>
-                <p><strong>Custom ML classifier</strong></p>
-                <p>Keyword / pattern detection - <strong>&lt;40ms</strong></p>
-              </div>
-              <p className="arch-arrowline">v</p>
-              <div className="arch-layer">
-                <p className="arch-layer-id">Layer 2</p>
-                <p><strong>LLM-based reasoning</strong></p>
-                <p>Context + intent analysis - API inference</p>
-              </div>
-            </section>
+            <div style={{
+              padding: '0.75rem 1rem',
+              borderRadius: '10px',
+              background: 'rgba(196,96,26,0.1)',
+              border: '1px solid rgba(196,96,26,0.3)',
+              display: 'flex',
+              alignItems: 'baseline',
+              gap: '0.55rem',
+            }}>
+              <span style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--accent-light)', letterSpacing: '-0.04em', lineHeight: 1 }}>&lt;40ms</span>
+              <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>detection latency</span>
+            </div>
+          </div>
 
-            <section className="arch-stage">
-              <p className="arch-stage-label">Output</p>
-              <p className="arch-em">Decision Engine</p>
-              <p>risk scoring - explanation generation - alert trigger</p>
-            </section>
-
-            <p className="arch-stackline">
-              <strong>Stack:</strong> GradientBoosting - Scam lexicon - Whisper STT - LLM inference
-            </p>
-          </article>
-
-          <article className="arch-section">
-            <div className="arch-section-head">
-              <p className="arch-kicker">Fall Detection System</p>
-              <h3 className="arch-section-title">Fall Detection (HomeGuard)</h3>
+          {/* ── Fall Detection ── */}
+          <div
+            data-stagger="1"
+            style={{
+              padding: '1.4rem',
+              border: '1px solid rgba(255,255,255,0.1)',
+              borderRadius: '18px',
+              background: 'rgba(255,255,255,0.035)',
+              display: 'grid',
+              gap: '1rem',
+              alignContent: 'start',
+            }}
+          >
+            <div>
+              <p className="eyebrow" style={{ marginBottom: '0.4rem' }}>Fall Detection</p>
+              <p style={{ fontSize: 'clamp(1.05rem, 1.8vw, 1.35rem)', fontWeight: 700, color: '#fff', lineHeight: 1.2 }}>
+                HomeGuard Vision Pipeline
+              </p>
             </div>
 
-            <section className="arch-stage">
-              <p className="arch-stage-label">Input</p>
-              <p className="arch-em">Camera / Video Feed</p>
-              <p className="arch-arrowline">v</p>
-            </section>
+            <ul style={{ listStyle: 'none', display: 'grid', gap: '0.65rem' }}>
+              {[
+                <>YOLOv8n person detection → BlazePose 33-point pose tracking</>,
+                <>7-feature logistic regression classifier</>,
+                <><strong style={{ color: 'var(--text)' }}>Runs fully on-device</strong> — no continuous streaming</>,
+                <>Only a short encrypted clip leaves the device on a confirmed event</>,
+              ].map((item, i) => (
+                <li key={i} style={{ fontSize: '0.88rem', color: 'var(--text-muted)', paddingLeft: '1rem', position: 'relative', lineHeight: 1.55 }}>
+                  <span style={{ position: 'absolute', left: 0, color: 'var(--accent)', fontWeight: 700 }}>›</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
 
-            <section className="arch-stage">
-              <p className="arch-stage-label">Vision Pipeline</p>
-              <p><strong>YOLOv8n</strong> person detection</p>
-              <p className="arch-arrowline">v</p>
-              <p><strong>MediaPipe BlazePose</strong> 33-point pose tracking</p>
-              <p className="arch-arrowline">v</p>
-              <p><strong>Feature extraction</strong> 7 pose features</p>
-              <p className="arch-arrowline">v</p>
-            </section>
-
-            <section className="arch-stage">
-              <p className="arch-stage-label">Classification</p>
-              <p className="arch-em">Logistic Regression (fall classifier)</p>
-              <p className="arch-arrowline">v</p>
-            </section>
-
-            <section className="arch-stage">
-              <p className="arch-stage-label">Output</p>
-              <p className="arch-em">Edge Decision Engine</p>
-              <p>fall detection - alert trigger <strong>(&lt;500ms)</strong></p>
-            </section>
-
-            <section className="arch-stage">
-              <p className="arch-stage-label">Deployment</p>
-              <p><strong>Runs on-device (edge)</strong></p>
-              <p>No continuous streaming</p>
-            </section>
-
-            <p className="arch-stackline">
-              <strong>Stack:</strong> YOLOv8n - BlazePose - LR classifier - On-device inference
-            </p>
-          </article>
+            <div style={{
+              padding: '0.75rem 1rem',
+              borderRadius: '10px',
+              background: 'rgba(196,96,26,0.1)',
+              border: '1px solid rgba(196,96,26,0.3)',
+              display: 'flex',
+              alignItems: 'baseline',
+              gap: '0.55rem',
+            }}>
+              <span style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--accent-light)', letterSpacing: '-0.04em', lineHeight: 1 }}>&lt;500ms</span>
+              <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>edge inference response</span>
+            </div>
+          </div>
         </div>
 
-        <footer className="arch-foot">
-          <span>Layered detection architecture</span>
-          <span>Unified alert system</span>
-          <span>Low-latency inference</span>
+        <footer
+          className="arch-foot"
+          style={{ gridTemplateColumns: 'repeat(4, minmax(0, 1fr))' }}
+        >
+          <span>On-device inference</span>
           <span>Privacy-first design</span>
+          <span>&lt;40ms scam detection</span>
+          <span>&lt;500ms fall response</span>
         </footer>
       </div>
     </section>
