@@ -104,6 +104,7 @@ export default function SlideMsgDemo({ isActive, isPrev }: SlideProps) {
       <div className="slide__inner">
         <p className="eyebrow">Pillar 1 · Interactive Demo</p>
         <h2 className="slide-title">MessageGuard</h2>
+        <p className="hg-tagline">Scans incoming texts, links &amp; QR codes for fraud — before you tap</p>
         <div className="demo-layout">
           <div className="demo-sidebar">
             <p className="demo-how-title">Pipeline</p>

@@ -197,6 +197,7 @@ export default function SlideHomeGuard({ isActive, isPrev }: SlideProps) {
       <div className="slide__inner">
         <p className="eyebrow">Pillar 3</p>
         <h2 className="slide-title">HomeGuard</h2>
+        <p className="hg-tagline">Camera-based fall detection — no wearable, no new hardware required</p>
         <div className="hg-layout">
           <div className="hg-info">
             <p className="hg-tagline">Non-wearable. Privacy-first. Always on.</p>

@@ -53,6 +53,7 @@ export default function SlideVoiceDemo({ isActive, isPrev }: SlideProps) {
       <div className="slide__inner">
         <p className="eyebrow">Pillar 2 · Interactive Demo</p>
         <h2 className="slide-title">VoiceGuard</h2>
+        <p className="hg-tagline">Detects scam calls in real time via AI voice analysis</p>
         <div className="demo-layout">
           <div className="demo-sidebar">
             <p className="demo-how-title">Pipeline</p>
